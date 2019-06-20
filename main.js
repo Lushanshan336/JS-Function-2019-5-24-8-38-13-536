@@ -22,9 +22,16 @@ palindrome('hello'); //  false
 palindrome('abcba'); //  true
 --------------------------------------------
 //作业3：按字母表顺序输出传入的参数字符串 main2.js
-
-
-
+function alphabetSort(message){
+var aaa = "";
+var arr = message.split('');
+var newa=arr.sort();
+	for(var i=0;i<=newa.length-1;i++){
+		aaa += newa[i];
+	}
+return aaa;
+}
+alert(alphabetSort('hello')); // 'ehllo'
 --------------------------------------------
 //作业4：计算出一个字符串共有多少个单词组成  main3.js
 var r = 0;
